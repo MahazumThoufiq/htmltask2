@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .div1 {
+            height: 400px;
+            width: 800px;
+            text-align: center;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .div2 {
+            height: 260px;
+            width: 700px;
+            text-align: center;
+            border: 1px solid black;
+            position: absolute;
+            left : 50px;
+        }
+
+        .subdiv1 {
+            width: 120px; /* Adjust the frame size as needed */
+            height: 135px;
+            border: 2px solid black;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            position: absolute;
+            left:50px;
+            top: 30px;
+        }
+        .photo {
+            width: 200px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .subdiv2 {
+          text-align: right;
+          margin-top: 20px;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1 style="text-align: center; margin-bottom: 0px;">Event 1</h1><br>
+        <label style="text-align: center;">Number of available seats: 23</label><br>
+        <label style="margin-top: 30px;">&nbsp;</label>
+        <div class="div2">
+            <div class="subdiv1">
+                <div class="photo">
+                    <img src="your-photo.jpg" alt="Passport Photo">
+                </div> 
+            </div>
+            <div class="subdiv2">
+                <label style="margin-right: 20px;">Name:</label><input type="name" style="width:250px;margin-bottom: 10px;margin-right: 20px;" required><br>
+                <label style="margin-right: 20px;">Email:</label><input type="name" style="width:250px;margin-bottom: 10px;margin-right: 20px;" required><br>
+                <label style="margin-right: 20px;">Phone No:</label><input type="tel" id="mobile-number" name="mobile-number" pattern="[0-9]{10}" required style="width:250px;margin-bottom: 10px;margin-right: 20px;"><br>
+                <label style="margin-right: 20px;">Number of seats:</label><select id="seats" name="seats" style="width:100px;margin-bottom: 10px;margin-right: 178px;text-align: center;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br>
+                <label style="margin-right: 20px;">Number of Attendee 2:</label><input type="name" style="width:250px;margin-bottom: 10px;margin-right: 20px;" required>
+                <br><br>
+                <div class="btn" style="margin-right: 100px;"><button style="margin-right: 20px;width:120px;">Submit</button>
+                    <button style="width:120px;">Cancel</button></div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
